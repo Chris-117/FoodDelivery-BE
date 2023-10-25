@@ -1,0 +1,18 @@
+# Application settings
+spring:
+  application:
+    name: backend
+
+  # TODO: Datasource settings
+  datasource:
+    url:  # Database connection URL
+    username:   # Database username
+    password:  # Database password
+    driver-class-name:  # Driver class for MongoDB
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+# Server settings
+server:
+  error:
+    include-message: always  # Include error message in the server response for debugging purposes
